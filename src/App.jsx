@@ -119,38 +119,59 @@ useEffect(()=>{
 
 
 
-
+console.log(`count : ${count}`)
   function onFormSubmit(event) {
     // Carcassonne,Boston Red Sox,$4750,SPARTAN-II,Egoist
     event.preventDefault();
-    // console.log(formData)
+    let i = 0
+    if(formData){
+      
+        for(let key in formData){
+          quizzes.forEach(quiz => (quiz.id === key && quiz.c_answer.correct_answer === formData[key]) ? i++ : i)
+        }
+        setCount(i)
+    }{
+      console.log(`formdata is undefined`)
+    }
+
     const dataArray = Object.keys(formData).map(function(k){return formData[k]})
     const [s1,s2,s3,s4,s5] = dataArray
     // console.log(`s1,s2,s3,s4,s5 : ${s1} ${s2} ${s3} ${s4} ${s5}`)
     const correctAnswers = quizzes.map(quiz => quiz.c_answer.correct_answer)  
     const [c1,c2,c3,c4,c5] = correctAnswers
     
-    // const sum = (p1,p2) => (p1===p2) ? setCount(count => count + 1) : ''
+    // console.log()
 
-    // sum(c1,s1)
-    // sum(c2,s2)
-    // sum(c3,s3)
-    // sum(c4,s4)
-    // sum(c5,s5)
-   
-      if(c1 === s1)
-      setCount(count => count +1)
-    if(c2 === s2)
-    setCount(count => count +1)
-    if(c3 === s3)
-    setCount(count => count +1)
-    if(c4 === s4)
-    setCount(count => count +1)
-    if(c5 === s5)
-    setCount(count => count +1)
   
+      // if(typeof(s1)==='undefined'){
+      //   console.log('s1 undefined')
+      // }else if(c1 === s1) {
+      //   setCount(count => count +1)
+      // }
+
+      // if(typeof(s2)==='undefined'){
+      //   console.log('s2 undefined')
+      // }else if (c2 === s2){
+      //   setCount(count => count +1)
+      // }
   
-    let i = 0
+      // if(typeof(s3)==='undefined'){
+      //   console.log('s3 undefined')
+      // }else if  (c3 === s3){
+      //   setCount(count => count +1)
+      // }
+
+      // if(typeof(s4)==='undefined'){
+      //   console.log('s4 undefined')
+      // }else if (c4 === s4) {
+      //   setCount(count => count +1)
+      // }
+
+      // if(typeof(s5)==='undefined'){
+      //   console.log('s5 undefined')
+      // }else if  (c5 === s5){
+      //   setCount(count => count +1)
+      // }
      
 
     // console.log(`c1,c2,c3,c4,c5 : ${c1} ${c2} ${c3} ${c4} ${c5}`)

@@ -10,7 +10,7 @@ export default function Quiz(props){
             // const [selectedOption1,selectedOption2,selectedOption3,selectedOption4] = props.selectedOption
             // const [correctAns1,correctAns2,correctAns3,correctAns4,correctAns5] = props.correctOption
             // console.log(correctAns1,correctAns2,correctAns3,correctAns4,correctAns5)
-            // console.log(props.quizzes)
+            console.log(props.quizzes)
             // const[correct_answer_q_1,correct_answer_q_2,correct_answer_q_3,correct_answer_q_4,correct_answer_q_5] = 
             // props.quizzes.map(quiz => quiz.c_answer.correct_answer)
             // console.log(correct_answer_q_1,correct_answer_q_2,correct_answer_q_3,correct_answer_q_4,correct_answer_q_1,correct_answer_q_2,correct_answer_q_3,correct_answer_q_5)
