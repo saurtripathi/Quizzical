@@ -1,11 +1,10 @@
 body {
   margin: 0;
-  /* padding: 0; */
-  /* margin: 0; */
-  height: 100vh;
   padding: 20px;
   display: grid;
   font-family: 'Karla';
+  background-image: url('public/QuizzicalBackground.jpg');
+  
 }
 
 * {
@@ -23,7 +22,7 @@ body {
   justify-content: center;
   height:600px;
   width: 600px;
-  margin: 50px auto;
+  margin: auto;
   /* border: 1px    solid red; */
 }
 h1 {
@@ -115,24 +114,25 @@ button:focus-visible {
 .answer--list input[type="radio"]:checked+label,
 .Checked+label {
 
-background: #D6DBF5;
+background: #bdc6f2;
 }
 
 .answer--list label {
-  border: 1px solid #CCC;
+  border: 1px solid #4d423f;;
   cursor: pointer;
   z-index: 90;
 }
 
 .answer--list label:hover {
-  background: #DDD;
+  background: #5367cd;
+  color: white;
 }
 
 .quiz--item {
    display: flex; 
    flex-direction: column;
-   border-bottom: 1px solid #DBDEF0;;
-    margin-bottom: 1.5em;
+   border-bottom: 1px solid #322b29;;
+    /* margin-bottom: 1.5em; */
 }
 
 .btn-check-answers {
@@ -143,8 +143,9 @@ background: #D6DBF5;
   font-weight: 600;
   line-height: normal;
   cursor: pointer;
-  height: 35px;
+  min-height: 35px;
   align-self: center;
+  margin-top: 1em;
 }
 .result--div {
   display: flex;
@@ -205,20 +206,5 @@ button {
     text-align: left;
   }
 
-  /* body {
-    height: 95vh;
-  }
-
-  main,
-  .BestEffort,
-  .tracker,
-  .timer--time {
-    width: 95%;
-  }
-
-  
-  canvas {
-    width: 95%;
-  } */
 
 }
