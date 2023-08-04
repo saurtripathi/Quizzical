@@ -189,12 +189,10 @@ button {
 form {
   max-width: 400px;
   width: 90vw;
-  min-height: 100vh;
 }
   .card {
     width: inherit;
-    height: 100vh;
-    /* margin: 0; */
+    margin: 0;
   }
 button {
   min-height: 52px;
@@ -204,7 +202,7 @@ button {
     align-items: center;
   }
   .question--text {
-    text-align: center;
+    text-align: left;
   }
 
   /* body {
