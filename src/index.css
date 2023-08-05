@@ -3,7 +3,7 @@ body {
   padding: 20px;
   display: grid;
   font-family: 'Karla';
-  background-image: url('public/QuizzicalBackground.jpg');
+  background-image: url('/QuizzicalBackground.jpg');
   background-size: cover;
   height: 95vh;
 }
