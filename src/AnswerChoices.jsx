@@ -12,22 +12,6 @@ export default function AnswerChoices(props) {
     return (
         <div>
                 <ul class="answer--list">
-                    {/* <li>
-                        <input type="radio" id="1" name="amount" />
-                        <label htmlFor="1">Answer1</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="2" name="amount" />
-                        <label htmlFor="2">Answer2</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="3" name="amount" checked="checked" />
-                        <label htmlFor="3">Answer3</label>
-                    </li>
-                    <li>
-                        <input type="radio" id="4" name="amount" />
-                        <label htmlFor="4">Answer4</label>
-                    </li> */}
                     {answerElementsArray}
                 </ul>
         </div>

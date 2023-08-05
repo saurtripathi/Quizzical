@@ -16,8 +16,6 @@ body {
 .card .quiz-tagline {
   font-weight: 600;
   border-bottom: 5px solid #06fcf8;
-  /* background-color: #637884; */
-  ;
   color: antiquewhite;
   padding: 1em 2em;
   border-radius: 50%;
@@ -25,23 +23,23 @@ body {
 
 .card {
   display: flex;
-  /* position: relative; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 600px;
   width: 600px;
   margin: auto;
-  /* border: 1px    solid red; */
 }
+
 .error {
-  border:1px solid red;
+  border: 1px solid red;
   display: flex;
   color: antiquewhite;
   padding: 1em 2em;
   background-color: red;
   font-family: 'Karla';
 }
+
 h1 {
   color: antiquewhite;
   text-align: center;
@@ -76,7 +74,8 @@ h1 {
 button {
   width: 193px;
   height: 52px;
-  border: 1px solid #a0b0ca;;
+  border: 1px solid #a0b0ca;
+  ;
   border-radius: 15px;
   color: #F5F7FB;
   text-align: center;
@@ -86,7 +85,6 @@ button {
   font-weight: 500;
   line-height: normal;
   cursor: pointer;
-  /* margin-top: 1.75rem; */
 }
 
 button:hover {
@@ -124,7 +122,6 @@ button:focus-visible {
 .answer--list label,
 .answer--list input[type="radio"] {
   display: inline-block;
-  /* width: fit-content; */
   height: fit-content;
   position: absolute;
   top: 0;
@@ -165,8 +162,6 @@ button:focus-visible {
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid white;
-  ;
-  /* margin-bottom: 1.5em; */
 }
 
 .btn-check-answers {
@@ -180,14 +175,13 @@ button:focus-visible {
   min-height: 35px;
   align-self: center;
   margin-top: 1em;
-  border:1px solid antiquewhite;
+  border: 1px solid antiquewhite;
 }
 
 .result--div {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border: 1px solid red; */
   align-self: center;
   gap: 1em;
 }
@@ -214,10 +208,6 @@ button {
 }
 
 @media(max-width:400px) {
-
-  #root {
-    /* border: 1px solid red; */
-  }
 
   .result--div {
     flex-direction: column;
@@ -253,7 +243,6 @@ button {
   }
 
   .btn-check-answers {
-    /* margin-top: 0; */
     min-height: 56px;
   }
 

@@ -4,23 +4,14 @@ import AnswerChoices from './AnswerChoices'
 import Question from './Question'
 
 export default function Quiz(props){
-    // console.log(`props.count : ${props.count}`)
-            // console.log(props.correctOption)
-            // console.log(props.selectedOption)
-            // const [selectedOption1,selectedOption2,selectedOption3,selectedOption4] = props.selectedOption
-            // const [correctAns1,correctAns2,correctAns3,correctAns4,correctAns5] = props.correctOption
-            // console.log(correctAns1,correctAns2,correctAns3,correctAns4,correctAns5)
+  
             console.log(props.quizzes)
-            // const[correct_answer_q_1,correct_answer_q_2,correct_answer_q_3,correct_answer_q_4,correct_answer_q_5] = 
-            // props.quizzes.map(quiz => quiz.c_answer.correct_answer)
-            // console.log(correct_answer_q_1,correct_answer_q_2,correct_answer_q_3,correct_answer_q_4,correct_answer_q_1,correct_answer_q_2,correct_answer_q_3,correct_answer_q_5)
-        
+           
         
             const questionAndAnswerElements = props.quizzes.map(function(quiz){
             const question = quiz.question
-            const correctAnswer = quiz.c_answer.correct_answer
             const [answer_ch1,answer_ch2,answer_ch3,answer_ch4] = quiz.all_answer_choices
-            // console.log(answer_ch1,answer_ch2,answer_ch3,answer_ch4)
+
             const a = answer_ch1 ? answer_ch1.incorrect_answer : ''
             const b = answer_ch2 ? answer_ch2.incorrect_answer : ''
             const c = answer_ch3 ? answer_ch3.incorrect_answer : ''
@@ -31,19 +22,10 @@ export default function Quiz(props){
             const isSelected_c = answer_ch3 ? answer_ch3.isSelected : ''
             const isSelected_d = answer_ch4 ? answer_ch4.isSelected :''
 
-            // console.log(`isSelected_a : ${isSelected_a}`)
-            // console.log(`isSelected_b : ${isSelected_b}`)
-            // console.log(`isSelected_c : ${isSelected_c}`)
-            // console.log(`isSelected_d : ${isSelected_d}`)
-
-            // console.log(answer_ch1.incorrect_answer)
             const questionId  = quiz.id
-            // console.log((quiz.c_answer))
             const {correct_answer,isSelected} = quiz.c_answer
-            // console.log(correct_answer)
-            const correctAns1 = correct_answer
-            
-      // green '#94D7A2'    brick #F8BCBC   
+
+          
          const style1 ={
             backgroundColor: (isSelected_a && correct_answer === a) ? 
             '#94D7A2'  : (isSelected_a && correct_answer !== a) ? '#F8BCBC' : (!isSelected_a && correct_answer == a)?'#94D7A2' : '#FFFFFF'
