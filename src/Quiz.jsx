@@ -67,6 +67,7 @@ export default function Quiz(props){
             {
                 a && <li>
                         <input 
+                            required
                             type="radio" 
                             id={questionId} 
                             name={questionId} 
